@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 2 - HTML CSS JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Responsive Grid Layout -->
+    <div class="grid-layout">
+  <header>
+    <h2>Student Portal</h2>
+    <p>Welcome to the ApexPlanet Interactive Task 2 Project!</p>
+  </header>
+
+  <nav>
+    <h3>Useful Links</h3>
+    <ul>
+      <li><a href="https://www.apexplanet.in" target="_blank">ApexPlanet Official Site</a></li>
+      <li><a href="#">Internship Dashboard</a></li>
+      <li><a href="#">Learning Resources</a></li>
+      <li><a href="#">Feedback Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h3>What You’ll Learn</h3>
+    <p>This project helps you understand the fundamentals of web development including:</p>
+    <ul>
+      <li>Form creation and validation</li>
+      <li>Responsive design using Flexbox/Grid</li>
+      <li>JavaScript DOM manipulation</li>
+      <li>To-Do List functionality</li>
+    </ul>
+  </main>
+
+  <aside>
+    <h3>Upcoming Contests</h3>
+    <ul>
+      <li>💡 UI/UX Design Challenge - Aug 1</li>
+      <li>🖥️ Code-a-thon: JavaScript Battle - Aug 5</li>
+      <li>📷 Mini Portfolio Showcase - Aug 10</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 ApexPlanet Software Pvt. Ltd. | All rights reserved.</p>
+  </footer>
+</div>
+
+    <!-- Contact Form -->
+    <div class="form-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="todo-section">
+      <h2>My To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <button id="addTaskBtn" onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
