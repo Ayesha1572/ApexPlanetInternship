@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">To-Do App</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="todo.html">To-Do App</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Tasks / Notes</h3>
+      <form id="task-form">
+        <input id="task-input" placeholder="Write a task or note..." required />
+        <button class="btn" type="submit">Add</button>
+      </form>
+
+      <div class="controls">
+        <label><input id="show-completed" type="checkbox" /> Show completed</label>
+        <button id="clear-all" class="btn small">Clear All</button>
+      </div>
+
+      <ul id="tasks-list" class="tasks-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">To-Do App — LocalStorage demo</div></footer>
+  <script src="todo.js"></script>
+</body>
+</html>

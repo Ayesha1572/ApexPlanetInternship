@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Product Listing</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="todo.html">To-Do App</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Products</h3>
+
+      <div class="filter-row">
+        <select id="category-filter">
+          <option value="all">All Categories</option>
+        </select>
+
+        <select id="sort-by">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="rating-desc">Rating →</option>
+        </select>
+
+        <input id="search" placeholder="Search products..." />
+      </div>
+
+      <div id="products-grid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">Product listing demo</div></footer>
+  <script src="products.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+:root{--accent:#0a7b6f;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.5;margin:0;color:#123}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:#eaf6f4;padding:12px 0;border-bottom:1px solid #d8ede9}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;color:var(--accent)}
+nav a{margin-left:14px;text-decoration:none;color:#0b5565}
+.hero{background:linear-gradient(90deg,#f6fffd 0%,#ffffff 100%);padding:30px;border-radius:8px;margin:20px 0}
+.card{background:#fff;padding:18px;border-radius:8px;margin:18px 0;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer;text-decoration:none}
+.btn.small{padding:6px 8px;font-size:0.9rem}
+.projects-list{list-style:none;padding:0}
+.tasks-list{list-style:none;padding:0;margin:12px 0}
+.tasks-list li{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-bottom:1px solid #f0f0f0}
+.tasks-list li .left{display:flex;gap:10px;align-items:center}
+.controls{display:flex;gap:12px;align-items:center;margin-top:10px}
+.filter-row{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.products-grid img{ width: 200px;height:200px;object-fit: contain;display: block;margin: 0 auto;}
+.product{border:1px solid #eee;padding:12px;border-radius:8px}
+.product h4{margin:0 0 8px}
+.site-footer{background:#f6f7f8;padding:12px;margin-top:20px;text-align:center;color:#666}
+@media (max-width:600px){.header-inner{flex-direction:column;gap:10px}.filter-row{flex-direction:column;align-items:stretch}}
